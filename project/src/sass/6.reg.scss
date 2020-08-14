@@ -1,0 +1,130 @@
+@charset "utf-8";
+$color:#ff6e00;
+/*!关闭按钮*/
+#close{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    a{
+        font-size: 24px;
+        float: right;
+        margin-right: 18px;
+    }
+    
+}
+/*!注册框*/
+ul{
+    width: 980px;
+    height: 550px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .use{
+        padding-left: 145px;
+        width: 480px;
+        display: none;
+        text-align: left;
+        font-size: 12px;
+        color: #d7d7d7;
+        height: 50px;
+    }
+    .stro{
+        display: none;
+        font-size: 12px;
+        color: #d7d7d7;
+    }
+    li{
+        width: 625px;
+        height: 55px;
+        line-height: 55px;
+        padding-left: 125px;
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        span{
+            display: inline-block;
+            width: 100px;
+            height: 55px;
+            line-height: 55px;
+            text-align: right;
+        }
+        input{
+            outline: none;
+            border: 1px solid black;
+            width: 250px;
+            height: 30px;
+        }
+        &:first-child{
+            display: flex;
+            justify-content: start;
+            span{
+                width:143px;
+                height: 55px;
+                display: block;
+                background:no-repeat url(../img/taobaowang.png);
+                background-size: contain;
+            }
+            p{
+                width: 100px;
+                height: 55px;
+                margin-left: 5px;
+                font-size: 25px;
+            }
+        }
+        &:nth-child(2){
+            background-color: $color;
+            font-size: 18px;
+            color: white;
+            span{
+                margin-left: 15px;
+                text-align: left;
+                font-size: 12px;
+                color: #d7d7d7;
+                height: 50px;
+            }
+        }
+        &:nth-child(8){
+            padding-left: 145px;
+            width: 480px;
+            display: none;
+            text-align: left;
+            font-size: 12px;
+            color: #d7d7d7;
+            height: 50px;
+        }
+        &:nth-child(9){
+            p{
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+        &:nth-child(10){
+            padding-left: 145px;
+            width: 480px;
+            display: none;
+            text-align: left;
+            font-size: 12px;
+            color: #d7d7d7;
+            height: 50px;
+        }
+    }
+    /*!注册按钮*/
+    .submit{
+        border-radius: 3px;
+        width: 300px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        border: none;
+        background-color: $color;
+    }
+    
+}

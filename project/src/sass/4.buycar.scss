@@ -1,0 +1,212 @@
+/*!顶部*/
+@import "nav";
+/*!搜索*/
+.search{
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 1288px;
+    height: 97px;
+    /*!淘宝网logo*/
+    .logo{
+        width: 190px;
+        height: 88px;
+        float: left;
+        margin-right: 170px;
+        img{
+            width: 100%;
+            height: 88px;
+        }
+    }
+    /*!搜索栏*/
+    .sear{
+        float: left;
+        width: 630px;
+        height: 87px;
+        /*!标签*/ 
+        ul{
+            margin-left: 17px;
+            width: 613px;
+            height: 22px;
+            li{
+                float: left;
+                width: 36px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                margin-right: 4px;
+                &:first-child{
+                    a{
+                        color: white;
+                    }
+                    background-color: $color;
+                    border-radius: 5px 5px 0 0;
+                }
+            }
+        }
+        /*!搜索*/ 
+        .inp{
+            width: 630px;
+            height: 40px;
+            input{
+                border: 2px solid #ff5000;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-right: none;
+                width: 554px;
+                height: 36px;
+            }
+            .btn{
+                width: 74px;
+                height: 40px;
+                line-height: 40px;
+                float: right;
+                text-align: center;
+                font-size: 18px;
+                color: white;
+                background-color: $color;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+        /*!提示*/ 
+        .his{
+            a{
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+/*!购物车*/
+.car{
+    width: 100%;
+    height: 155px;
+    .bcar{
+        width: 1288px;
+        height: 155px;
+        margin: 0 auto;
+        .carhead{
+            width: 1288px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 32px;
+            line-height: 32px;
+            background: #f3f3f3;
+            border: 1px solid #e9e9e9;
+            border-top: 0;
+            .all{
+                height: 18px;
+                line-height: 18px;
+                width: 122px;
+                padding-left: 11px;
+                input{
+                    outline: none;
+                    border: none;
+                    background: none;
+                }
+            }
+            .shop{
+                width: 208px;
+                height: 32px;
+            }
+            .pict{
+                width: 180px;
+                height: 32px;
+            }
+            .money{
+                width: 160px;
+                height: 32px;
+            }
+            .nums{
+                width: 160px;
+                height: 32px;
+            }
+            .allmoney{
+                width: 140px;
+                height: 32px;
+            }
+            .del{
+                width: 40px;
+                height: 32px;
+            }
+        }
+        tbody{
+            width: 1288px;
+            tr{
+                width: 1288px;
+                height: 200px;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 5px;
+                .all{
+                    display: block;
+                    width: 122px;
+                    height: 200px;
+                    line-height: 200px;
+                    padding-left: 11px;
+                    input{
+                        outline: none;
+                        border: none;
+                        background: none;
+                    }
+                }
+                img{
+                    width: 208px;
+                    height: 200px;
+                    
+                }
+                .pict{
+                    width: 180px;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .money{
+                    width: 160px;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .nums{
+                    width: 160px;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .allmoney{
+                    width: 140px;
+                    height: 200px;
+                    line-height: 200px;
+                }
+                .del{
+                    width: 40px;
+                    height: 200px;
+                    line-height: 200px;
+                }
+            }
+            
+        }
+        tfoot{
+            width: 1288px;
+            height: 50px;
+            line-height: 50px;
+            tr{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .all{
+                    height: 18px;
+                    line-height: 18px;
+                    width: 122px;
+                    padding-left: 11px;
+                }
+                .operation{
+                    width: 310px;
+                    height: 50px;
+                }
+                .allprice{
+                    width: 350px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

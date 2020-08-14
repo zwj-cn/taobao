@@ -1,0 +1,203 @@
+/*!顶部*/
+@import "nav";
+/*!搜索*/
+.search{
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 1288px;
+    height: 97px;
+    /*!淘宝网logo*/
+    .logo{
+        width: 190px;
+        height: 88px;
+        float: left;
+        margin-right: 170px;
+        img{
+            width: 100%;
+            height: 88px;
+        }
+    }
+    /*!搜索栏*/
+    .sear{
+        float: left;
+        width: 630px;
+        height: 87px;
+        /*!标签*/ 
+        ul{
+            margin-left: 17px;
+            width: 613px;
+            height: 22px;
+            li{
+                float: left;
+                width: 36px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                margin-right: 4px;
+                &:first-child{
+                    a{
+                        color: white;
+                    }
+                    background-color: $color;
+                    border-radius: 5px 5px 0 0;
+                }
+            }
+        }
+        /*!搜索*/ 
+        .inp{
+            width: 630px;
+            height: 40px;
+            input{
+                border: 2px solid #ff5000;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-right: none;
+                width: 554px;
+                height: 36px;
+            }
+            .btn{
+                width: 74px;
+                height: 40px;
+                line-height: 40px;
+                float: right;
+                text-align: center;
+                font-size: 18px;
+                color: white;
+                background-color: $color;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+        /*!提示*/ 
+        .his{
+            a{
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/*!详情*/ 
+.box{
+    float: left;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 115.6px;
+    border:1px solid #f4f4f4;
+    .out{
+        position: relative;
+        float: left;
+        padding-left: 52px;
+        padding-right: 52px;
+        color: #6c6c6c;
+        width: 314px;
+        height: 418px;
+        overflow: hidden;
+        #spic{
+            width: 314px;
+            height: 418px;
+            img{
+                width: 314px;
+                height: 418px;
+            }
+            #sf{
+                position: absolute;
+                top: 0;
+                left: 52px;
+                width: 131.461px;
+                height: 174.724px;
+                background-color: blue;
+                display: none;
+                cursor: move;
+                opacity: 0.3;
+            }
+        }
+    }
+    #bf{
+        width: 314px;
+        height: 418px;
+        // border:1px solid #f4f4f4;
+        overflow: hidden;
+        position: relative;
+        left: 533.6px;
+        display: none;
+        z-index: 100;
+        position: relative;
+        top:0;
+        left: 0px;
+        #bpic{
+            display: block;
+            width: 601px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+    }
+}
+.al{
+    width: 530px;
+    height: 420px;
+    margin-top: 30px;
+    margin-left: 115px;
+    float: left;
+    top: 197px;
+    z-index: -999;
+    .title{
+        width: 510px;
+        height: 40px;
+        padding: 20px 10px 12px;
+    }
+    .price{
+        width: 330px;
+        height: 40px;
+        padding: 20px 100px 12px;
+        margin-top: 30px;
+    }
+    .num{
+        width: 330px;
+        height: 40px;
+        padding: 20px 100px 12px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        input{
+            display: block;
+            outline: none;
+            border: 1px solid black;
+            width: 40px;
+            padding-left:35px ;
+            height: 40px;
+        }
+        span{
+            display: block;
+            width: 75px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    }
+    .btn{
+        width: 510px;
+        height: 40px;
+        padding: 20px 10px 12px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        div{
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .time{
+            border: 1px solid red;
+        }
+        .buy{
+            background-color: #FF0036;
+        }
+    }
+}

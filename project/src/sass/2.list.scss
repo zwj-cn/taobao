@@ -1,0 +1,139 @@
+@charset "utf-8";
+$color:#ff6e00;
+/*!顶部*/
+@import "nav";
+/*!搜索*/
+.search{
+    padding-top: 24px;
+    margin: 0 auto;
+    width: 1288px;
+    height: 97px;
+    /*!淘宝网logo*/
+    .logo{
+        width: 190px;
+        height: 88px;
+        float: left;
+        margin-right: 170px;
+        img{
+            width: 100%;
+            height: 88px;
+        }
+    }
+    /*!搜索栏*/
+    .sear{
+        float: left;
+        width: 630px;
+        height: 87px;
+        /*!标签*/ 
+        ul{
+            margin-left: 17px;
+            width: 613px;
+            height: 22px;
+            li{
+                float: left;
+                width: 36px;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                margin-right: 4px;
+                &:first-child{
+                    a{
+                        color: white;
+                    }
+                    background-color: $color;
+                    border-radius: 5px 5px 0 0;
+                }
+            }
+        }
+        /*!搜索*/ 
+        .inp{
+            width: 630px;
+            height: 40px;
+            input{
+                border: 2px solid #ff5000;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-right: none;
+                width: 554px;
+                height: 36px;
+                margin-right: 0;
+            }
+            .btn{
+                width: 68.5px;
+                height: 40px;
+                line-height: 40px;
+                float: right;
+                text-align: center;
+                font-size: 18px;
+                color: white;
+                background-color: $color;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+        /*!提示*/ 
+        .his{
+            a{
+                margin: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+/*!提示*/ 
+.sort{
+    width: 1288px;
+    height: 97px;
+    margin: 0 auto;
+    div{
+        float: left;
+        margin: 25px 50px;
+        width: 100px;
+        height: 47px;
+        line-height: 47px;
+        border-radius: 4px 4px 4px 4px;
+        background-color:#f4f4f4;
+        text-align: center;
+    }
+    .active{
+        background-color: $color;
+    }
+}
+/*!渲染*/ 
+.list{
+    margin: 0 auto 30px;
+    width: 1288px;
+    height: 1336px;
+    li{
+        float: left;
+        padding: 20px 20px 0 20px;
+        border: 1px solid transparent;
+        color: #6c6c6c;
+        width: 215.5px;
+        height: 312px;
+        overflow: hidden;
+        border-right-color: #f4f4f4;
+        border-bottom-color: #f4f4f4;
+        p{
+            width: 215.5px;
+            height: 48px;
+            line-height: 24px;
+            overflow: hidden;
+            margin-top: 7px;
+            line-height: 22px;
+            height: 44px;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        img {
+            width: 215.5px;
+            height: 200px;
+            display: block;
+        }span {
+           display: block;
+           margin-top: 5px;
+        }
+    }
+}
